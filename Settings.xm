@@ -46,7 +46,7 @@ extern NSBundle *uYouPlusBundle();
     accessibilityIdentifier:nil
     detailTextBlock:nil
     selectBlock:^BOOL (YTSettingsCell *cell, NSUInteger arg1) {
-        return [%c(YTUIUtils) openURL:[NSURL URLWithString:@"https://github.com/qnblackcat/uYouPlus/releases/latest"]];
+        return [%c(YTUIUtils) openURL:[NSURL URLWithString:@"https://github.com/thaibm92/uYouPlusMT/releases/latest"]];
     }];
     [sectionItems addObject:version];
 
@@ -395,7 +395,7 @@ extern NSBundle *uYouPlusBundle();
     }];
     [sectionItems addObject:miscellaneousGroup];
 
-    [settingsViewController setSectionItems:sectionItems forCategory:uYouPlusSection title:@"uYouPlus" titleDescription:LOC(@"TITLE DESCRIPTION") headerHidden:YES];
+    [settingsViewController setSectionItems:sectionItems forCategory:uYouPlusSection title:@"MINHTHAI.NET" titleDescription:LOC(@"TITLE DESCRIPTION") headerHidden:YES];
 }
 
 - (void)updateSectionForCategory:(NSUInteger)category withEntry:(id)entry {

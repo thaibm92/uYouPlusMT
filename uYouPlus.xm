@@ -1307,6 +1307,9 @@ UIColor* raisedColor = [UIColor colorWithRed:0.035 green:0.035 blue:0.035 alpha:
         %init(gDisableHints);
     }
  
+    // Disable updates
+    [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"automaticallyCheckForUpdates"]
+ 
     // Disable broken options of uYou
     [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"removeYouTubeAds"];
     [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"disableAgeRestriction"];
